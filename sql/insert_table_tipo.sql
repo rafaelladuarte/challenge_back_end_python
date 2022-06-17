@@ -1,4 +1,4 @@
-INSERT INTO tipo (
+INSERT INTO public.tipo (
     tipo_nm, tipo_ds
 )
 VALUES 

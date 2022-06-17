@@ -1,4 +1,4 @@
-INSERT INTO categoria(
+INSERT INTO public.categoria (
     cat_nm, cat_ds
 )
 VALUES 
