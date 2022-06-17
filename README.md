@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<img width='500px'  src='/challenge_backend.jpg'/>
+<img width='500px'  src='arquivos/image/challenge_backend.jpg'/>
 </p>
 
 <p align="center">
