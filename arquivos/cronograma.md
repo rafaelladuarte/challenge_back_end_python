@@ -22,7 +22,6 @@
 
 * Briefing: https://www.alura.com.br/challenges/back-end-2/semana-01-api-rest
 
-
 * Trello: https://trello.com/b/ofAXrAlA/challenge-backend-semana-1
 
 3. Lives:
