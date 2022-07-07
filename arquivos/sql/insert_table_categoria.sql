@@ -7,4 +7,7 @@ VALUES
     ("saude", "consultas medicas, exames, farmacia"),
     ("transporte", "onibus, gasolina, manutencao veiculo"),
     ("lazer", "atividade fisica, shooping, cinema, parque, livros"),
+    ("vestuario",	"roupas, calçados, acessorios"),
+    ("banco",	"tarifas bancarias, fatura de cartao de credito"),
+    ("outros",	"outros"),
     ("educacao","escola, cursos, material, monitoria");

@@ -1,12 +1,16 @@
 from infrastructure.database.postgre import PostgreSQL
+from datetime import datetime
 
 class Despesa():
     def __init__(self):
         self.table = 'despesa'
         self.postgre = PostgreSQL()
 
-    def create_despesa(self):
-        pass
+    def create_despesa(self,name, descricao, valor,categoria, tipo):
+        values = (name, descricao, valor, datetime.now(), categoria, tipo)
+        columns = ("des_nm","des_ds","des_vl","des_dt","des_cat_id","des_tipo_id")
+        
+        self.postgre.insert(self.table,values,columns)
 
     def update_despesa(self):
         pass
@@ -14,7 +18,7 @@ class Despesa():
     def remove_despesa(self):
         pass
 
-    def list_all_despesa(self):
+    def list_despesa(self):
         tuplas = self.postgre.select(self.table)
 
         json_despesa = []

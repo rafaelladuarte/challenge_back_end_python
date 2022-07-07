@@ -15,9 +15,9 @@ class Tipo():
             if len(t) == 3:
                 json_tipo.append(
                     {
-                        'tipo_id': t[0],
-                        'tipo_nm': t[1],
-                        'tipo_ds': t[2]
+                        'id': t[0],
+                        'nome': t[1],
+                        'descrição': t[2]
                     }
                 )
             else:

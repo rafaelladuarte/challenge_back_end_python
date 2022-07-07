@@ -1,12 +1,17 @@
 from infrastructure.database.postgre import PostgreSQL
+from datetime import datetime
 
 class Receita():
     def __init__(self):
-        self.table = 'receitas'
+        self.table = 'receita'
         self.postgre = PostgreSQL()
 
-    def create_receita(self,name, descricao, valor, date, categoria, tipo):
-        pass
+    def create_receita(self,name, descricao, valor, tipo):
+        values = (name, descricao, valor, datetime.now(), tipo)
+        columns = ("rec_nm","rec_ds","rec_vl","rec_dt","rec_tipo_id")
+        
+        self.postgre.insert(self.table,values,columns)
+
 
     def update_receita(self):
         pass
