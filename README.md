@@ -63,3 +63,9 @@ O servidor está rodando, visite http://127.0.0.1:8000/ no seu navegador de inte
 ## 📦 Desenvolvimento
 ### Arquitetura
 
+### Badge
+
+
+<img src="arquivos/image/Badge_Alura_Challenge_backend3.png">
+</p>
+

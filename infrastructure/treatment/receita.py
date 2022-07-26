@@ -16,8 +16,8 @@ class Receita():
     def update_receita(self):
         pass
 
-    def remove_receita(self):
-        pass
+    def remove_receita(self,id):
+        self.postgre.delete(self.table,"rec_id",id)
 
     def list_receita(self):
         tuplas = self.postgre.select(self.table)

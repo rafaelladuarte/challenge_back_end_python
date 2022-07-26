@@ -15,8 +15,8 @@ class Despesa():
     def update_despesa(self):
         pass
 
-    def remove_despesa(self):
-        pass
+    def remove_despesa(self,id):
+        self.postgre.delete(self.table,"des_id",id)
 
     def list_despesa(self):
         tuplas = self.postgre.select(self.table)

@@ -15,7 +15,7 @@ class PostgreSQL():
  
     def select(self,table):
         query = f"""
-            SELECT  FROM {table}
+            SELECT * FROM {table}
             
         """
 
@@ -44,6 +44,33 @@ class PostgreSQL():
         query = f"""
             INSERT INTO {table} ({columns})
             VALUES ({values})
+        """
+
+        try:
+
+            with psycopg2.connect(
+                dbname=self.database, 
+                user=self.user, 
+                password=self.password,
+                host=self.host,
+                port=self.port) as connection:
+
+                with connection.cursor() as cursor:
+                    cursor.execute(query)
+
+        finally:
+            try:
+                connection.commit()
+                connection.close()
+            except:
+                pass
+
+
+    def delete(self,table,column, values):
+
+        query = f"""
+            DELETE FROM {table} 
+            WHERE {column} == '{values}'
         """
 
         try:
